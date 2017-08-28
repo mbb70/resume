@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Matthew}{Blizzard}{Brown}{
+  \href{mailto:mbb70@case.edu}{mbb70@case.edu} | 925.876.6106
+}
+
+\begin{minipage}[t]{0.49\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\subsection{Case Western Reserve University}
+\descript{BA in Computer Science}
+\location{May 2015 | Cleveland, OH}
+\sectionsep
+
+\descript{BS in Statistics}
+\location{May 2015 | Cleveland, OH}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\begin{spacing}{1.5}
+Data Structures \textbullet{} Compiler Design \\
+Signal Processing \textbullet{} Operating Systems \\
+Stochastic Modelling \textbullet{} Computational Statistics \\
+Introduction to Artificial Intelligence \textbullet{} Algorithms \\
+\end{spacing}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-15pt}
+\section{Skills}
+\runsubsection{Programming Languages} \descript{}
+\vspace{1pt}
+Java \textbullet{} Scala \textbullet{} Ruby \textbullet{} Python \textbullet{} C/C++ \textbullet{} R \textbullet{} Shell/UNIX \textbullet{} SQL \\
+Javascript \textbullet{} CoffeeScript \textbullet{} HTML \textbullet{} CSS \textbullet{} \LaTeX
+\sectionsep
+
+\runsubsection{Technologies, Frameworks, and Libraries} \descript{}
+\vspace{1pt}
+MapReduce/HDFS \textbullet{} Hive/Imapala \textbullet{} Cassandra \textbullet{} Spark \textbullet{} MongoDB \textbullet{} ElasticSearch \\
+Knockoutjs \textbullet{} React/Redux \textbullet{} jQuery \textbullet{} d3 \textbullet{} Sinatra \textbullet{} BLAS/LAPACK \textbullet{} Numpy/Scipy/Pandas
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Boston Health Economics}
+|
+\descript{Full Stack Software Engineer}
+\location{ June 2015 – Current | Boston, MA }
+\begin{tightemize}
+\item Day to day running of Instant Health Data, a healthcare analytics web application sitting in front of a large (60+ node/100TB+) baremetal HDFS/Spark/Cassandra cluster
+\item Developed ETLs to load terabytes of healthcare data from various sources into Cassandra
+\item Created real time full stack monitoring solution for distributed application combining server status/load, Spark logs, REST APIs, application database queries and webserver logs
+\item Extended/maintained existing SPA framework written in Knockoutjs and designed visualizations for analyzing longitudinal patient data in React and d3
+\item Created functionality to generate Word and Excel reports describing a user's project including the complete specification and results
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Virtual Hold Technology}
+|
+\descript{Software Validation Intern}
+\location{May 2014 – Aug 2014 | Akron, OH}
+\begin{tightemize}
+\item Helped write and maintain large test infrastructure written in Ruby and running on top of Jenkins
+\item Developed a Java plugin for CI tool Jenkins to dynamically assign tests to servers from an available server pool, improving testing parrallelism and efficiency dramatically
+\item Extended and improved the reliability of the UI test suite written with Ruby Watir/Selenium WebDriver
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TechCorps Ohio}
+|
+\descript{Programming Instructor}
+\location{May 2013 – Aug 2013 | Cleveland, OH}
+\begin{tightemize}
+\item Taught children ages 8-16 elementary computer programming and web development
+\item Using beginner "drag and drop" programming languages like Scratch and Alice to teach core programming concepts
+\item Basic web development including core networking concepts and introductions to HTML, CSS and Javascript
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github \href{https://github.com/mbb70}{https://github.com/mbb70} \\
+LinkedIn \href{https://www.linkedin.com/in/matthew-brown-25aa24b7}{https://www.linkedin.com/in/matthew-brown-25aa24b7}  \\
+
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     FOOTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\descript{References available upon request}
+
+\end{document}
